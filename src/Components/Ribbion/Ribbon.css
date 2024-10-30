@@ -1,0 +1,121 @@
+.RibbonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #e8fbff;
+    padding: 10vh;
+    gap: 35vw;
+    margin-bottom: 8em;
+}
+
+.RibbonText > h1 {
+    font-weight: bolder;
+    font-size: 2.8em;
+    color: black;
+    position: relative; /* Positioning for the ::after pseudo-element */
+}
+
+.RibbonText > h1 > span {
+    position: relative; /* Relative positioning to ensure the ::after is placed correctly */
+}
+
+.RibbonText > h1 > span::after {
+    content: ''; /* Create the underline */
+    display: block; /* Make it a block element */
+    height: 5px; /* Thickness of the underline */
+    background-color: #eb7150; /* Color of the underline */
+    position: absolute; /* Positioning relative to the text */
+    left: 0; /* Align it with the text */
+    right: 0; /* Ensure it spans the full width */
+    bottom: -2px; /* Adjust the gap between text and underline */
+}
+
+.GetVerified {
+    background-color: #eb7150;
+    border: 0;
+    font-size: 1.3em;
+    color: white;
+    padding: 2vh 3vw;
+    border-radius: 4px;
+    font-weight: bolder;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 480px) {
+    .RibbonDiv {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items */
+        gap: 20px; /* Reduce gap between items */
+        padding: 5vh; /* Reduce padding */
+    }
+
+    .RibbonText > h1 {
+        font-size: 1.5em; /* Smaller font size for h1 */
+    }
+
+    .GetVerified {
+        font-size: 1.1em; /* Adjust button font size */
+        padding: 1.5vh 2vw; /* Adjust button padding */
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .RibbonDiv {
+        flex-direction: column; /* Stack items vertically on medium screens */
+        align-items: center; /* Center items */
+        gap: 25px; /* Moderate gap between items */
+    }
+
+    .RibbonText > h1 {
+        font-size: 2.5em; /* Adjust font size for h1 */
+    }
+
+    .GetVerified {
+        font-size: 1.2em; /* Slightly adjust button font size */
+        padding: 1.8vh 2.5vw; /* Adjust button padding */
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .RibbonDiv {
+        gap: 30vw; /* Moderate gap between items */
+    }
+
+    .RibbonText > h1 {
+        font-size: 2em; /* Set font size for h1 */
+    }
+
+    .GetVerified {
+        font-size: 1.3em; /* Maintain button font size */
+        padding: 2vh 3vw; /* Maintain button padding */
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .RibbonDiv {
+        gap: 35vw; /* Maintain gap for larger screens */
+    }
+
+    .RibbonText > h1 {
+        font-size: 2.8em; /* Keep font size consistent */
+    }
+
+    .GetVerified {
+        font-size: 1.3em; /* Maintain button font size */
+        padding: 2vh 3vw; /* Maintain button padding */
+    }
+}
+
+@media (min-width: 2560px) {
+    .RibbonDiv {
+        gap: 40vw; /* Increase gap for very large screens */
+    }
+
+    .RibbonText > h1 {
+        font-size: 3em; /* Slightly increase font size */
+    }
+
+    .GetVerified {
+        font-size: 1.4em; /* Adjust button font size for large screens */
+        padding: 2.5vh 4vw; /* Adjust button padding */
+    }
+}

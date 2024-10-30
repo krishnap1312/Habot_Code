@@ -1,0 +1,203 @@
+.ContextDiv {
+    display: flex;
+    margin-top: 8vh;
+    justify-content: space-evenly;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.signup-section {
+    text-align: left;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 2vw 10vw 0 -2vw;
+}
+
+.signup-section h1 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 28px;
+}
+
+.signup-section .highlight {
+    color: #3e206d;
+}
+
+.signup-section p {
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    line-height: 1.5;
+}
+
+.signup-button {
+    background-color: #00732f;
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px; /* Adjusted gap for better spacing */
+    font-weight: bold;
+    height: 6vh;
+    width: 17vw;
+    transition: background-color 0.3s;
+}
+
+.bi-arrow-right {
+    font-size: 2vw;
+}
+
+.signup-button:hover {
+    background-color: #218838;
+}
+
+.arrow {
+    font-size: 1.2em;
+}
+
+.city-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, auto);
+    gap: 20px;
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.city-box {
+    padding: 20px;
+    border: 2px solid #ff7a00;
+    height: fit-content;
+    width: 16vw;
+    border-radius: 4px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+    box-sizing: border-box;
+}
+
+/* Media Queries for Responsive Design */
+
+@media (max-width: 480px) {
+    .ContextDiv {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items */
+    }
+
+    .signup-section {
+        max-width: 90%; /* Full width on small screens */
+        margin: 5vw 0; /* Adjust margin for smaller screens */
+    }
+
+    .signup-section h1 {
+        font-size: 2em; /* Slightly smaller heading */
+    }
+
+    .signup-section p {
+        font-size: 1em; /* Smaller paragraph text */
+        margin-bottom: 30px; /* Reduce bottom margin */
+    }
+
+    .signup-button {
+        width: 80vw; /* Full width button on small screens */
+        height: auto; /* Adjust height */
+    }
+
+    .city-list {
+        grid-template-columns: 1fr; /* Single column layout */
+        margin-top: 40px; /* Adjust margin */
+    }
+
+    .city-box {
+        width: 90%; /* Full width city box */
+    }
+
+    .bi-arrow-right {
+        font-size: 8vw;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .signup-section {
+        max-width: 80%; /* Adjust width */
+        margin: 5vw 0; /* Adjust margin */
+    }
+
+    .signup-section h1 {
+        font-size: 2.2em; /* Slightly smaller heading */
+    }
+
+    .signup-button {
+        width: 70vw; /* Adjust button width */
+    }
+
+    .city-list {
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+    }
+
+    .city-box {
+        width: auto; /* Auto width for flexibility */
+    }
+
+   
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .signup-section {
+        max-width: 70%; /* More space on larger screens */
+        margin: 5vw 0; /* Adjust margin */
+    }
+
+    .signup-section h1 {
+        font-size: 2.5em; /* Default heading size */
+    }
+
+    .signup-button {
+        width: 25vw; /* Adjust button width */
+    }
+
+    .city-list {
+        grid-template-columns: repeat(2, 1fr); /* Maintain two columns */
+    }
+
+    .city-box {
+        width: 20vw; /* Adjust width */
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+    .signup-section {
+        max-width: 60%; /* Wider on large screens */
+        margin: 5vw 0; /* Adjust margin */
+    }
+
+    .signup-button {
+        width: 20vw; /* Adjust button width */
+    }
+
+    .city-box {
+        width: 15vw; /* Adjust width for larger screens */
+    }
+}
+
+@media (min-width: 2560px) {
+    .signup-section {
+        max-width: 50%; /* Max width for very large screens */
+        margin: 5vw 0; /* Adjust margin */
+    }
+
+    .signup-button {
+        width: 15vw; /* Adjust button width */
+    }
+
+    .city-box {
+        width: 12vw; /* Adjust width for large screens */
+    }
+}

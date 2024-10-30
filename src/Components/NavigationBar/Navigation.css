@@ -1,0 +1,59 @@
+.logo{
+    width: 15vh;
+}
+
+.loginBtn{
+    color:green;
+    border: 1px green solid;
+    margin-top: 0vh;
+    font-weight: bold;
+    border-radius: .3vw;
+    padding: 1.5vh 2.5vw;
+    margin-left: 4vw;
+    margin-right: 4vw;
+}
+
+.nav-link{
+    font-size: 1.2vw;
+}
+
+
+
+
+
+@media (min-width: 769px) and (max-width: 1440px) {
+    .logo {
+        width: 14vh;
+    }
+    .loginBtn {
+        font-size: 1.8vw;
+        padding: 1.2vh 2.5vw;
+        margin-left: 3vw;
+        margin-right: 3vw;
+    }
+    .nav-link {
+        font-size: 1.5vw;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 480px) {}
+
+@media (min-width: 481px) and (max-width: 768px) {}
+
+@media (min-width: 769px) and (max-width: 1440px) {}
+
+@media (min-width: 1440px) and (max-width:2559px) {}
+
+@media (min-width: 2560px) {}

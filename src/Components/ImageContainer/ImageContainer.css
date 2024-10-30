@@ -1,0 +1,220 @@
+.ImageContainer {
+  height: 80vh;
+  width: 100vw;
+  background-image: url("/public/buildings.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 105, 0.5); /* Semi-transparent blue color */
+  background-blend-mode: overlay;
+}
+
+.ImageContainerText > div > h1 {
+  font-weight: bold;
+  text-align: center;
+  font-size: 3vw; /* Responsive font size */
+}
+
+.ImageContainerText > div > h3 {
+  font-size: 4vw;
+}
+
+.ImageContainerInput {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5vh;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background-color: transparent;
+  padding: 15px;
+  border-radius: 8px;
+  flex-wrap: wrap;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  flex: 1;
+  max-width: fit-content; /* Full width on smaller screens */
+}
+
+.input-group .icon {
+  font-size: 18px;
+  margin-right: 10px;
+  color: #ff7a00;
+}
+
+.input-group:nth-child(2) .icon {
+  color: #ff5722;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  font-size: 30px;
+  color: #333;
+  width: fit-content;
+  max-width: 70%;
+  height: fit-content; /* Adjust based on desired input height */
+  padding: 0vh; /* Reset padding */
+  text-align: center;
+  box-sizing: border-box; /* Ensures padding and borders are included in width and height */
+}
+
+.input-group input::placeholder {
+  color: #666;
+  font-size: 1.8vh;
+  text-align: center;
+}
+
+.search-btn {
+  background-color: #00732f;
+  border: none;
+  color: white;
+  padding: 20px 64px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 0px;
+}
+
+.search-btn:hover {
+  background-color: #218838;
+}
+
+h5 > span {
+  font-weight: 100;
+  text-decoration: underline;
+}
+
+.h5Container {
+  margin-top: 6vh;
+  text-align: center;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 480px) {
+  .ImageContainer {
+    height: auto; /* Adjust height for smaller screens */
+    padding: 20px; /* Add padding for small screens */
+  }
+
+  .ImageContainerText > div > h1 {
+    font-size: 5vw; /* Smaller font size for h1 */
+  }
+
+.input-group input {
+  width: 60vw;
+}
+
+  .ImageContainerText > div > h3 {
+    font-size: 6vw; /* Smaller font size for h3 */
+  }
+
+  .ImageContainerInput {
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center inputs */
+    
+  }
+
+  .search-btn {
+    width: 77vw; /* Full width button */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (min-width: 424px) and (max-width: 768px) {
+  .search-btn {
+    width: 75vw; /* Full width button */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .ImageContainerText > div > h1 {
+    font-size: 4vw; /* Adjust font size for medium screens */
+  }
+
+  .ImageContainerText > div > h3 {
+    font-size: 5vw; /* Adjust font size for medium screens */
+  }
+
+  
+
+  .input-group input {
+    font-size: 24px; /* Adjust input font size */
+  }
+
+  .search-btn {
+    padding: 15px 50px; /* Adjust padding for medium screens */
+    width: 89vw;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  .ImageContainerText > div > h1 {
+    font-size: 3.5vw; /* Fine-tune font size for larger screens */
+  }
+
+  .ImageContainerText > div > h3 {
+    font-size: 4.5vw; /* Fine-tune font size for larger screens */
+  }
+
+  .input-group input {
+    font-size: 28px; /* Slightly larger font size */
+  }
+
+  .search-btn {
+    padding: 18px 60px; /* Adjust padding for larger screens */
+  }
+}
+
+@media (min-width: 1440px) and (max-width: 2559px) {
+  .ImageContainerText > div > h1 {
+    font-size: 3vw; /* Set a base font size */
+  }
+
+  .ImageContainerText > div > h3 {
+    font-size: 4vw; /* Set a base font size */
+  }
+
+  .input-group input {
+    font-size: 30px; /* Maintain larger font size */
+  }
+
+  .search-btn {
+    padding: 20px 64px; /* Maintain button padding */
+  }
+}
+
+@media (min-width: 2560px) {
+  .ImageContainerText > div > h1 {
+    font-size: 2.5vw; /* Slightly smaller font size for very large screens */
+  }
+
+  .ImageContainerText > div > h3 {
+    font-size: 3.5vw; /* Slightly smaller font size for very large screens */
+  }
+
+  .input-group input {
+    font-size: 32px; /* Increase input font size */
+  }
+
+  .search-btn {
+    padding: 22px 70px; /* Adjust padding for very large screens */
+  }
+}

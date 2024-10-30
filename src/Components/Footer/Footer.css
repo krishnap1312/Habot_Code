@@ -1,0 +1,690 @@
+.LogoImage {
+  width: 15vw;
+  margin-left: -10vw;
+  margin-top: 3vh;
+}
+
+.Copywrite {
+  text-align: left;
+  color: white;
+  margin-left: -10vw;
+  margin-top: 2vh;
+}
+
+.footerDiv {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #123557;
+  padding: 8vh 0;
+  color: white;
+}
+
+.SocialMediaIcons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 10vw;
+  margin: auto 0;
+}
+
+.SocialMediaIcons > div > i {
+  border: 1px solid white;
+  border-radius: 50%;
+  font-size: 0.8vw;
+  padding: 1vw;
+  margin: 0 1vw;
+}
+
+.footerButtons > p {
+  text-align: left;
+}
+
+.FButton {
+  font-weight: bolder;
+}
+
+.fotterButtonDiv {
+  display: flex;
+  justify-content: space-evenly;
+  width: 40vw;
+  margin-left: -18vw;
+}
+
+.Line {
+  position: relative;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #9f9f9f;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -328vh;
+  width: 95vw;
+  margin: 0 2.5vw;
+}
+
+.Lines {
+  position: relative;
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #9f9f9f;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 95vw;
+  margin: 0 2.5vw;
+  margin-top: 15vh;
+}
+
+@media (max-width: 480px) {
+  .footerDiv {
+    display: block;
+  }
+
+  .LogoImage {
+    width: 40vw;
+    margin: 0 30%;
+  }
+
+  .Copywrite {
+    text-align: center;
+  }
+
+  .fotterButtonDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10% 10%;
+    gap: 8vw;
+  }
+
+  .SocialMediaIcons {
+    gap: 10vw;
+    margin: 2vh 4vw;
+  }
+
+  .SocialMediaIcons > div > i {
+    font-size: 8vw;
+    padding: 4vw;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 344px) and (max-width: 360px) {
+  .footerDiv {
+    display: block;
+  }
+
+  .LogoImage {
+    width: 40vw;
+    margin: 0 auto;
+  }
+
+  .Copywrite {
+    text-align: center;
+  }
+
+  .fotterButtonDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10% 10%;
+    gap: 8vw;
+  }
+
+  .SocialMediaIcons {
+    gap: 10vw;
+    margin: 2vh 4vw;
+  }
+
+  .SocialMediaIcons > div > i {
+    font-size: 8vw;
+    padding: 4vw;
+    margin: 0 auto;
+  }
+  .Line {
+    height: 0.5vh;
+    bottom: -350vh;
+  }
+  .Lines {
+    height: 0.5vh;
+    bottom: -394vh;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 375px) {
+  .footerDiv {
+    display: block;
+  }
+
+  .LogoImage {
+    width: 40vw;
+    margin: 0 30%;
+  }
+
+  .Copywrite {
+    text-align: center;
+  }
+
+  .fotterButtonDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10% 10%;
+    gap: 8vw;
+  }
+
+  .SocialMediaIcons {
+    gap: 10vw;
+    margin: 2vh 4vw;
+  }
+
+  .SocialMediaIcons > div > i {
+    font-size: 8vw;
+    padding: 4vw;
+    margin: 0 auto;
+  }
+  .Line {
+    height: 0.5vh;
+    bottom: -414vh;
+  }
+  .Lines {
+    height: 0.5vh;
+    bottom: -470vh;
+  }
+}
+
+@media (min-width: 375px) and (max-width: 390px) {
+  .Line {
+    height: 1vh;
+    bottom: -458vh;
+  }
+  .Lines {
+    height: 1vh;
+    bottom: -518vh;
+  }
+
+  .SocialMediaIcons > div > i {
+    font-size: 5vw;
+    text-align: center;
+  }
+}
+
+@media (min-width: 390px) and (max-width: 412px) {
+  .Line {
+    height: 0.6vh;
+    bottom: -370vh;
+  }
+  .Lines {
+    height: 0.6vh;
+    bottom: -423vh;
+  }
+}
+
+@media (min-width: 412px) and (max-width: 414px) {
+  .Line {
+    height: 0.6vh;
+    bottom: -348vh;
+  }
+  .Lines {
+    height: 0.6vh;
+    bottom: -395vh;
+  }
+}
+
+@media (min-width: 414px) and (max-width: 425px) {
+  .Line {
+    height: 0.6vh;
+    bottom: -355vh;
+  }
+  .Lines {
+    height: 0.6vh;
+    bottom: -405vh;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 540px) {
+  .Line {
+    height: 0.51vh;
+    bottom: -342vh;
+  }
+
+  .Lines {
+    height: 0.51vh;
+    bottom: -385vh;
+  }
+
+  .SocialMediaIcons > div > i {
+    font-size: 4vw;
+  }
+
+  .SocialMediaIcons {
+    margin: 0 9vw;
+  }
+}
+
+@media (min-width: 540px) and (max-width: 768px) {
+  .footerDiv {
+    display: block;
+  }
+
+  .LogoImage {
+    width: 40vw;
+    margin: 0 auto;
+  }
+
+  .Copywrite {
+    text-align: center;
+  }
+
+  .fotterButtonDiv {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 10% 10%;
+    gap: 8vw;
+  }
+
+  .SocialMediaIcons {
+    gap: 10vw;
+    margin: 2vh 4vw;
+  }
+
+  .SocialMediaIcons > div > i {
+    font-size: 8vw;
+    padding: 4vw;
+    margin: 0 auto;
+  }
+  .Line {
+    height: 0.51vh;
+    bottom: -392vh;
+  }
+
+  .Lines {
+    height: 0.51vh;
+    bottom: -452vh;
+  }
+
+  .SocialMediaIcons > div > i {
+    font-size: 4vw;
+  }
+
+  .SocialMediaIcons {
+    margin: 0 9vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 820px) {
+  .LogoImage {
+    width: 15vw;
+    margin-left: 10vw;
+    margin-top: vh;
+  }
+
+  .Copywrite {
+    text-align: left;
+    color: white;
+    margin-left: 10vw;
+    margin-top: 2vh;
+  }
+
+  .footerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #123557;
+    padding: 8vh 0;
+    color: white;
+  }
+  .SocialMediaIcons {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4vw;
+    width: 85vw;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .SocialMediaIcons > div > i {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+
+  .fotterButtonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin-left: 8vw;
+    margin-top: 0vw;
+  }
+
+  .Line {
+    position: relative;
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #9f9f9f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -310vh;
+    width: 95vw;
+    margin: 0 2.5vw;
+  }
+
+  .Lines {
+    position: relative;
+    content: "";
+    display: block;
+    height: 4px;
+    background-color: #9f9f9f;
+    position: absolute;
+    left: 0;
+    right: 0;
+    width: 95vw;
+    margin: 0 2.5vw;
+    bottom: -340vh;
+  }
+}
+
+@media (min-width: 820px) and (max-width: 853px) {
+  .LogoImage {
+    width: 15vw;
+    margin-left: 10vw;
+    margin-top: 3vh;
+  }
+
+  .Copywrite {
+    text-align: left;
+    color: white;
+    margin-left: 10vw;
+    margin-top: 2vh;
+  }
+
+  .footerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #123557;
+    padding: 8vh 0;
+    color: white;
+  }
+
+  .SocialMediaIcons {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    gap: 4vw;
+    width: 85vw;
+    margin: auto;
+    justify-items: center;
+  }
+
+  .SocialMediaIcons > div > i {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 1vw;
+  }
+
+  .fotterButtonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin-left: 8vw;
+    gap: 4vw;
+  }
+
+  .Line {
+    bottom: -292vh;
+  }
+
+  .Lines {
+    bottom: -315vh;
+  }
+}
+
+@media (min-width: 853px) and (max-width: 912px) {
+  .LogoImage {
+    width: 15vw;
+    margin-left: -10vw;
+    margin-top: 3vh;
+  }
+
+  .Copywrite {
+    text-align: left;
+    color: white;
+    margin-left: -10vw;
+    margin-top: 2vh;
+  }
+
+  .footerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #123557;
+    padding: 8vh 0;
+    color: white;
+  }
+
+  .SocialMediaIcons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vw;
+    margin: auto 0;
+  }
+
+  .SocialMediaIcons > div > i {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 1vw;
+    margin: 0 1vw;
+  }
+
+  .fotterButtonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin-left: -8vw;
+  }
+
+  .Line {
+    bottom: -280vh;
+  }
+
+  .Lines {
+    bottom: -295vh;
+  }
+}
+
+@media (min-width: 912px) and (max-width: 1024px) {
+  .LogoImage {
+    width: 15vw;
+    margin-left: -10vw;
+    margin-top: 3vh;
+  }
+
+  .Copywrite {
+    text-align: left;
+    color: white;
+    margin-left: -10vw;
+    margin-top: 2vh;
+  }
+
+  .footerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #123557;
+    padding: 8vh 0;
+    color: white;
+  }
+
+  .SocialMediaIcons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vw;
+    margin: auto 0;
+  }
+
+  .SocialMediaIcons > div > i {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 1vw;
+    margin: 0 1vw;
+  }
+
+  .fotterButtonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin-left: -8vw;
+  }
+
+  .Line {
+    bottom: -268vh;
+  }
+
+  .Lines {
+    bottom: -285vh;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+  .LogoImage {
+    width: 15vw;
+    margin-left: -10vw;
+    margin-top: 3vh;
+  }
+
+  .Copywrite {
+    text-align: left;
+    color: white;
+    margin-left: -10vw;
+    margin-top: 2vh;
+  }
+
+  .footerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #123557;
+    padding: 8vh 0;
+    color: white;
+  }
+
+  .SocialMediaIcons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vw;
+    margin: auto 0;
+  }
+
+  .SocialMediaIcons > div > i {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 1vw;
+    margin: 0 1vw;
+  }
+
+  .fotterButtonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin-left: -8vw;
+  }
+
+  .Line {
+    bottom: -272vh;
+    
+    
+  }
+
+  .Lines {
+    bottom: -290vh;
+  }
+}
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+  .LogoImage {
+    width: 15vw;
+    margin-left: -10vw;
+    margin-top: 3vh;
+  }
+
+  .Copywrite {
+    text-align: left;
+    color: white;
+    margin-left: -10vw;
+    margin-top: 2vh;
+  }
+
+  .footerDiv {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #123557;
+    padding: 8vh 0;
+    color: white;
+  }
+
+  .SocialMediaIcons {
+    display: flex;
+    justify-content: space-evenly;
+    width: 15vw;
+    margin: auto 0;
+  }
+
+  .SocialMediaIcons > div > i {
+    border: 1px solid white;
+    border-radius: 50%;
+    font-size: 2vw;
+    padding: 1vw;
+    margin: 0 1vw;
+  }
+
+  .fotterButtonDiv {
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    margin-left: -8vw;
+  }
+
+  .Line {
+    bottom: -357vh;
+  }
+
+  .Lines {
+    bottom: -380vh;
+  }
+}
+
+@media (max-width: 768px) and (max-height: 659px) {
+    .Line {
+        bottom: -425vh;
+      }
+    
+      .Lines {
+        bottom: -470vh;
+        
+      }
+    
+}
+
+@media (max-width: 320px) and (max-height: 659px) {
+    .Line {
+        bottom: -460vh;
+      }
+    
+      .Lines {
+        bottom: -520vh;
+        
+      }
+    
+}
+
+
+@media (min-width: 1440px) {
+  .Line {
+    bottom: -340vh;
+  }
+
+  .Lines {
+    bottom: -360vh;
+  }
+}
